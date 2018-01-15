@@ -17,14 +17,15 @@ public class StarShow {
 		
 			//5. delete this line. you will draw the star again in step 8.
 		// 13. Set the speed to 8
-
+bukbeak.setSpeed(800);
 		// 6. Make a variable to hold the X position of the Robot and set it to 10
 int star = 10;
 		// 7. Make a variable to hold the Y position of the Robot and set it to 950
 int space = 950;
 		// 8. Make a variable to hold the star size and set it to 25
-int size = 25;
+int size = 5;
 			// 10. Set the X position of the robot to your X variable
+for (int i = 0; i < 30; i++) {
 	bukbeak.setX(star);
 			// 11. Set the Y position of the robot to your Y variable
 	bukbeak.setY(space);
@@ -39,13 +40,12 @@ int size = 25;
 			// 17. Turn the robot 12 degrees
 	bukbeak.turn(12);
 	// 12. Repeat the steps #19 to #18, 30 times
-	
 	//19. Set the pen width to i
-	//bukbeak.setPenWidth();
+	bukbeak.setPenWidth(i);
 			// 18. Make each star a different random color like in Figure 4. 
-	bukbeak.setPenColor(2, 44, 255);
+	bukbeak.setRandomPenColor();
 	}
-
+	}
 	private void drawStar(int starSize) {
 		// 2. Put the robot's pen down
 bukbeak.penDown();
