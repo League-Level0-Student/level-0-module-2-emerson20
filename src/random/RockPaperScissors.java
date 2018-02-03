@@ -6,7 +6,6 @@ package random;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -82,9 +81,7 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         //2. Run the program 4 times. Does the computer always choose the same thing?
 
         //3. Change oppenentSelection to be a random number between 0 and 2;
-        Random gen= new Random();
-       
-        int opponentSelection = gen.nextInt(3);
+        int opponentSelection = 1;
         
         //4. Run the program again. Is the result different?
  
