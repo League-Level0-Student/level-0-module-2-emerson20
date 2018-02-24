@@ -22,15 +22,17 @@ String count = JOptionPane.showInputDialog("Where do we start our countdown form
 		// 3. Change the countdown to use the new starting point
 		int number = Integer.parseInt(count);
 		// 1. Print a countdown from 10 to 0 on the console
-for(int i=number;i >= 0;i--)
+for(int i=number;i >= 0;i--) {
 		// 4. Use the speak method to hear the countdown.
 		speak(i+"");
 		// 5. when the counting is done, speak "blastoff!"
+}
+JOptionPane.showMessageDialog(null, "BLASTOFF!!!");
 	}
 
 static void speak(String words) {
    	 try {
-   		 Runtime.getRuntime().exec("say " + words).waitFor();
+   		 Runtime.getRuntime().exec("say -v Alex " + words).waitFor();
    	 } catch (Exception e) {
    		 e.printStackTrace();
    	 }
